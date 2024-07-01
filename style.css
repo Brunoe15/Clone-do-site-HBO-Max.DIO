@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+/*Variaveis*/
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+  }
+
+/*navbar*/
+.navbar{
+    height: 55px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 10px;
+    position: fixed;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.navbar #link-logo{
+    height: 100%;
+    width: 180px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar #link-login{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    list-style-type: none;
+}
+.navbar button{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 170px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+/*Inicio da Página*/
+section{
+    padding-top: 55px;
+}
