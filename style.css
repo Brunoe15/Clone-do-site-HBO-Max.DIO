@@ -87,5 +87,107 @@
     padding-top: 55px;
     height: 100vh;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
-    background-size: 400% 400%;\
+    background-size: 400% 400%;
+    animation: gradiente 5s ease infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes gradiente {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.info_assinatura{
+    height: 480px;
+    width: 60%;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.info_logos{
+    border: 1px solid red;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#info_chamada{
+    border: 1px solid blue;
+    width: 75%;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+}
+#info_chamada b{
+    font-size: 50px;
+}
+#info_divisao{
+    margin: 30px 0 30px 0;
+    border: 3px solid;
+    border-image: linear-gradient(to left, #56125b, #271e6e) 1;
+    width: 100%;
+}
+#info_valores{
+    border: 1px solid green;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+}
+#info_valores b{
+    font-size: 50px;
+}
+.info_botao{
+    width: 35%;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #56125b, #271e6e, transparent);
+    animation: wiggle 2.2s linear infinite;
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+.info_botao:hover{
+    border: 2px solid #ff00e5;
+    background: transparent;
+}
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
 }
