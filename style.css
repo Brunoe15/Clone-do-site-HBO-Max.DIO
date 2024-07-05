@@ -43,7 +43,6 @@
     height: 55px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.274);
-    border: 1px solid white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,6 +83,9 @@
 }
 
 /*Inicio da Página*/
-section{
+.principal{
     padding-top: 55px;
+    height: 100vh;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;\
 }
