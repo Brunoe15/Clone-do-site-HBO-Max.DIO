@@ -2,12 +2,35 @@
     
 /*navbar*/
 .navbar{
-    height: 120px;
+    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 10px 20px 10px;
-}    
+    }    
+
+    /*Inicio da Página*/
+    .principal{
+        height: 170vh;
+    }
+    .info_assinatura{
+        height: 140vh;
+        margin-top: 60px;
+        width: 80%;
+        gap: 20px;
+    }
+    #info_chamada{
+        width: 90%;
+    }
+    #info_valores{
+        width: 100%;
+    }
+    .info_botao{
+        animation: none;
+    }
+    #texto_pequeno{
+        width: 100%;
+    }
 }

@@ -6,6 +6,22 @@
     text-decoration: none;
     font-family: "Raleway", sans-serif;
 }
+::-webkit-scrollbar {
+    width: 10px;  /* Largura da barra de rolagem */
+}
+
+/* Estilizando a parte de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #020228;  /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilizando o polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #b535f6;  /* Cor do polegar da barra de rolagem */
+    border-radius: 10px;  /* Borda arredondada */
+}
+
+
 
 /*Variaveis*/
 :root {
@@ -83,9 +99,10 @@
 }
 
 /*Inicio da Página*/
+
 .principal{
     padding-top: 55px;
-    height: 100vh;
+    height: auto;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
     animation: gradiente 5s ease infinite alternate;
@@ -105,9 +122,9 @@
     }
 }
 .info_assinatura{
-    height: 480px;
+    margin-top: 60px;
+    height: 100vh;
     width: 60%;
-    border: 1px solid white;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -115,7 +132,6 @@
     gap: 20px;
 }
 .info_logos{
-    border: 1px solid red;
     width: 70%;
     display: flex;
     align-items: center;
@@ -123,7 +139,6 @@
     flex-wrap: wrap;
 }
 #info_chamada{
-    border: 1px solid blue;
     width: 75%;
     font-size: 35px;
     text-align: center;
@@ -140,7 +155,6 @@
     width: 100%;
 }
 #info_valores{
-    border: 1px solid green;
     width: 40%;
     text-align: center;
     font-size: 25px;
@@ -150,25 +164,33 @@
 #info_valores b{
     font-size: 50px;
 }
-.info_botao{
-    width: 35%;
-    padding: 12px 24px;
+.info_botao {
+    padding: 18px 45px;
+    font-size: 15px;
+    background-color: var(--tertiary-color);
+    border-radius: 500px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
     border: none;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 25px;
-    background: linear-gradient(45deg, #56125b, #271e6e, transparent);
-    animation: wiggle 2.2s linear infinite;
     cursor: pointer;
-    filter: brightness(1.1);
-}
-.info_botao:hover{
-    border: 2px solid #ff00e5;
-    background: transparent;
-}
-@keyframes wiggle {
+    animation: wiggle 2.2s linear infinite;
+  }
+  .info_botao {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+  }
+  .info_botao:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+  }
+  @keyframes wiggle {
     0% {
         transform: rotate(0);
     }
@@ -190,4 +212,21 @@
     40%, 100% {
         transform: rotate(0);
     }
+}
+#texto_pequeno{
+    margin-top: 30px;
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+/*Planos e Preços*/
+.planos_precos{
+    height: 130vh;
+    background-color: #020228;
+    background-image: url(images/background-movies-series.png), linear-gradient( #490cb0, transparent);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
 }
