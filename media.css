@@ -33,4 +33,35 @@
     #texto_pequeno{
         width: 100%;
     }
+
+    /*Divisão 1*/
+    .divisao1{
+        background-position: center;
+    }
+
+    /*Planos e preços*/
+    .planos_precos{
+        height: 270vh;
+    }
+    .cards_planos_precos{
+        flex-direction: column;
+        padding: 5px;
+    }
+    #card{
+        padding: 40px;
+    }
+    #tit_preco{ 
+        gap: 17px;
+    }
+    #tit_preco h3{
+        color: white;
+        font-size: 18px;
+    }
+    #tit_preco p{
+        font-size: 22px;
+    }
+    #card button{
+        width: 90%;
+        padding: 10px 5px;
+    }
 }
