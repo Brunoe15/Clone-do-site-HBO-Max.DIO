@@ -80,6 +80,7 @@
     }
     #capa1{
         transition: none;
+        height: 90vh;
         width: 360px;
         animation: slide 18s ease infinite alternate;
     }
