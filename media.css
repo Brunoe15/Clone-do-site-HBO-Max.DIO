@@ -66,6 +66,10 @@
     }
 
     /*Conteudos*/
+    .conteudos{
+        padding-top: -150px;
+        height: 150vh;
+    }
     .conteudos_capas{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         grid-template-rows: 100%; 
@@ -76,44 +80,36 @@
     }
     #capa1{
         transition: none;
+        width: 330px;
+        animation: slide 18s ease infinite alternate;
     }
-    #capa1:hover {
-        background-image: url(images/hbo-default_0.webp);
-        transform: none;
+    @keyframes slide {
+        0% { background-image: url('images/hbo-default_0.webp'); }
+        20% { background-image: url('images/MAX-Default.webp'); }
+        40% { background-image: url('images/DC_Default.webp'); }
+        60% { background-image: url('images/WB-Default.webp'); }
+        80% { background-image: url('images/CN-Default.webp'); }
+        100% { background-image: url('images/UCL-Default.webp'); }
     }
     #capa2{
-        transition: none;
-    }
-    #capa2:hover {
-        background-image: url(images/MAX-Default.webp);
-        transform: none;
+        display: none;
     }
     #capa3{
-        transition: none;
-    }
-    #capa3:hover {
-        background-image: url(images/DC_Default.webp);
-        transform: none;
+        display: none;
     }
     #capa4{
-        transition: none;
-    }
-    #capa4:hover {
-        background-image: url(images/WB-Default.webp);
-        transform: none;
+        display: none;
     }
     #capa5{
-        transition: none;
-    }
-    #capa5:hover {
-        background-image: url(images/CN-Default.webp);
-        transform: none;
+        display: none;
     }
     #capa6{
-        transition: none;
+        display: none;
     }
-    #capa6:hover {
-        background-image: url(images/UCL-Default.webp);
-        transform: none;
+    
+    /*Rodapé*/
+    .rodape{
+        height: 45vh;
+        padding: 20px;
     }
 }
