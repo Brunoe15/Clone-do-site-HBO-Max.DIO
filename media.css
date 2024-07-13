@@ -80,7 +80,7 @@
     }
     #capa1{
         transition: none;
-        width: 330px;
+        width: 360px;
         animation: slide 18s ease infinite alternate;
     }
     @keyframes slide {
@@ -91,6 +91,11 @@
         80% { background-image: url('images/CN-Default.webp'); }
         100% { background-image: url('images/UCL-Default.webp'); }
     }
+    #capa1:hover{
+            transform: scale(1);
+            transition: 0s;
+            background-image: none;
+        }
     #capa2{
         display: none;
     }
