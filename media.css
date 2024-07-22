@@ -13,10 +13,11 @@
 
     /*Inicio da Página*/
     .principal{
-        height: 170vh;
+        height: 110vh;
+        padding: 60vh 0 100vh;
     }
     .info_assinatura{
-        height: 140vh;
+        height: 90vh;
         margin-top: 60px;
         width: 80%;
         gap: 20px;
@@ -37,6 +38,8 @@
     /*Divisão 1*/
     .divisao1{
         background-position: center;
+        background-size: contain;
+        background-attachment: scroll;
     }
 
     /*Planos e preços*/
@@ -72,45 +75,52 @@
     }
     .conteudos_capas{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        grid-template-rows: 100%; 
-        grid-gap: 20px;
+        grid-template-rows: 100%;
         overflow-x: auto;
         grid-auto-flow: column;
         height: 95vh;
+        padding: 0;
     }
     #capa1{
         transition: none;
         height: 90vh;
-        width: 360px;
-        animation: slide 18s ease infinite alternate;
+        width: 280px;
+        background-position: center;
     }
-    @keyframes slide {
-        0% { background-image: url('images/hbo-default_0.webp'); }
-        20% { background-image: url('images/MAX-Default.webp'); }
-        40% { background-image: url('images/DC_Default.webp'); }
-        60% { background-image: url('images/WB-Default.webp'); }
-        80% { background-image: url('images/CN-Default.webp'); }
-        100% { background-image: url('images/UCL-Default.webp'); }
-    }
-    #capa1:hover{
-            transform: scale(1);
-            transition: 0s;
-            background-image: none;
-        }
     #capa2{
-        display: none;
+        margin-left: 110px;
+        transition: none;
+        height: 90vh;
+        width: 280px;
+        background-position: center;
     }
     #capa3{
-        display: none;
+        margin-left: -20px;
+        transition: none;
+        height: 90vh;
+        width: 280px;
+        background-position: center;
     }
     #capa4{
-        display: none;
+        margin-left: -20px;
+        transition: none;
+        height: 90vh;
+        width: 280px;
+        background-position: center;
     }
     #capa5{
-        display: none;
+        margin-left: -20px;
+        transition: none;
+        height: 90vh;
+        width: 280px;
+        background-position: center;
     }
     #capa6{
-        display: none;
+        margin-left: -20px;
+        transition: none;
+        height: 90vh;
+        width: 280px;
+        background-position: center;
     }
     
     /*Rodapé*/
